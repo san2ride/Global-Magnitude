@@ -25,7 +25,7 @@
 		A498E7C51FEA1E430028B356 /* LeaderBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardVC.swift; sourceTree = "<group>"; };
 		A498E7C71FEA1EA50028B356 /* MultiplicationRoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationRoundVC.swift; sourceTree = "<group>"; };
 		A498E7C91FEA25C30028B356 /* LeaderBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardCell.swift; sourceTree = "<group>"; };
-		A4A02E351FEA157D008F695F /* Global Multiplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Global Multiplication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A02E351FEA157D008F695F /* Global.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Global.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4A02E381FEA157D008F695F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A4A02E3D1FEA157D008F695F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A4A02E3F1FEA157D008F695F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -92,7 +92,7 @@
 		A4A02E361FEA157D008F695F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4A02E351FEA157D008F695F /* Global Multiplication.app */,
+				A4A02E351FEA157D008F695F /* Global.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,9 +132,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A4A02E341FEA157D008F695F /* Global Multiplication */ = {
+		A4A02E341FEA157D008F695F /* Global */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4A02E471FEA157D008F695F /* Build configuration list for PBXNativeTarget "Global Multiplication" */;
+			buildConfigurationList = A4A02E471FEA157D008F695F /* Build configuration list for PBXNativeTarget "Global" */;
 			buildPhases = (
 				3DF8761AA82E5CC6423BB7B1 /* [CP] Check Pods Manifest.lock */,
 				A4A02E311FEA157D008F695F /* Sources */,
@@ -147,9 +147,9 @@
 			);
 			dependencies = (
 			);
-			name = "Global Multiplication";
+			name = Global;
 			productName = "Global Multiplication";
-			productReference = A4A02E351FEA157D008F695F /* Global Multiplication.app */;
+			productReference = A4A02E351FEA157D008F695F /* Global.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -168,7 +168,7 @@
 					};
 				};
 			};
-			buildConfigurationList = A4A02E301FEA157D008F695F /* Build configuration list for PBXProject "Global Multiplication" */;
+			buildConfigurationList = A4A02E301FEA157D008F695F /* Build configuration list for PBXProject "Global" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -181,7 +181,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4A02E341FEA157D008F695F /* Global Multiplication */,
+				A4A02E341FEA157D008F695F /* Global */,
 			);
 		};
 /* End PBXProject section */
@@ -404,7 +404,7 @@
 				DEVELOPMENT_TEAM = 6D9CKTK39V;
 				INFOPLIST_FILE = "$(SRCROOT)/Global Multiplication/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jsanchezrides.Global-Multiplication";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsanchezrides.Global;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -420,7 +420,7 @@
 				DEVELOPMENT_TEAM = 6D9CKTK39V;
 				INFOPLIST_FILE = "$(SRCROOT)/Global Multiplication/Supporting Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jsanchezrides.Global-Multiplication";
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsanchezrides.Global;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -430,7 +430,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A4A02E301FEA157D008F695F /* Build configuration list for PBXProject "Global Multiplication" */ = {
+		A4A02E301FEA157D008F695F /* Build configuration list for PBXProject "Global" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4A02E451FEA157D008F695F /* Debug */,
@@ -439,7 +439,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4A02E471FEA157D008F695F /* Build configuration list for PBXNativeTarget "Global Multiplication" */ = {
+		A4A02E471FEA157D008F695F /* Build configuration list for PBXNativeTarget "Global" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A4A02E481FEA157D008F695F /* Debug */,

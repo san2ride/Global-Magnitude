@@ -11,21 +11,20 @@ import RevealingSplashView
 
 class LeaderBoardVC: UIViewController {
     
-//    let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "launchScreenIcon")!, iconInitialSize: CGSize(width: 80, height: 80), backgroundColor: UIColor.white)
+    let revealingSplashView = RevealingSplashView(iconImage: UIImage(named: "multiplication")!, iconInitialSize: CGSize(width: 80, height: 80), backgroundColor: UIColor.white)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
         title = "Leader Board"
-//        self.view.addSubview(revealingSplashView)
-//        revealingSplashView.animationType = SplashAnimationType.heartBeat
-//        revealingSplashView.startAnimation()
-//        
-//        revealingSplashView.heartAttack = true
-
+        self.view.addSubview(revealingSplashView)
+        revealingSplashView.animationType = SplashAnimationType.heartBeat
+        revealingSplashView.startAnimation()
+        revealingSplashView.duration = 3.0
         
+        revealingSplashView.heartAttack = true
+
     }
-    
 }
 
 extension LeaderBoardVC: UITableViewDelegate, UITableViewDataSource {
