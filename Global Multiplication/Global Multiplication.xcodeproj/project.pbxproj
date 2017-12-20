@@ -1,0 +1,454 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08BE376EB38B5FB9D892A9EA /* Pods_Global_Multiplication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4C4430176C0BFDAC43D4FB04 /* Pods_Global_Multiplication.framework */; };
+		A498E7C41FEA1E080028B356 /* SummaryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498E7C31FEA1E080028B356 /* SummaryVC.swift */; };
+		A498E7C61FEA1E430028B356 /* LeaderBoardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498E7C51FEA1E430028B356 /* LeaderBoardVC.swift */; };
+		A498E7C81FEA1EA50028B356 /* MultiplicationRoundVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498E7C71FEA1EA50028B356 /* MultiplicationRoundVC.swift */; };
+		A498E7CA1FEA25C30028B356 /* LeaderBoardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A498E7C91FEA25C30028B356 /* LeaderBoardCell.swift */; };
+		A4A02E391FEA157D008F695F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A02E381FEA157D008F695F /* AppDelegate.swift */; };
+		A4A02E3E1FEA157D008F695F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A02E3C1FEA157D008F695F /* Main.storyboard */; };
+		A4A02E401FEA157D008F695F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A02E3F1FEA157D008F695F /* Assets.xcassets */; };
+		A4A02E431FEA157D008F695F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A02E411FEA157D008F695F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		26A2E049CE87790284715469 /* Pods-Global Multiplication.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Global Multiplication.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Global Multiplication/Pods-Global Multiplication.debug.xcconfig"; sourceTree = "<group>"; };
+		4C4430176C0BFDAC43D4FB04 /* Pods_Global_Multiplication.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Global_Multiplication.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A498E7C31FEA1E080028B356 /* SummaryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SummaryVC.swift; sourceTree = "<group>"; };
+		A498E7C51FEA1E430028B356 /* LeaderBoardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardVC.swift; sourceTree = "<group>"; };
+		A498E7C71FEA1EA50028B356 /* MultiplicationRoundVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultiplicationRoundVC.swift; sourceTree = "<group>"; };
+		A498E7C91FEA25C30028B356 /* LeaderBoardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeaderBoardCell.swift; sourceTree = "<group>"; };
+		A4A02E351FEA157D008F695F /* Global Multiplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Global Multiplication.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A02E381FEA157D008F695F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A4A02E3D1FEA157D008F695F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A4A02E3F1FEA157D008F695F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A4A02E421FEA157D008F695F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A4A02E441FEA157D008F695F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E431FB2CCED213FAF8D673DD /* Pods-Global Multiplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Global Multiplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-Global Multiplication/Pods-Global Multiplication.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4A02E321FEA157D008F695F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08BE376EB38B5FB9D892A9EA /* Pods_Global_Multiplication.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8A7C35A3701B66EAF5357A42 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4C4430176C0BFDAC43D4FB04 /* Pods_Global_Multiplication.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A498E7BE1FEA190B0028B356 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A498E7C51FEA1E430028B356 /* LeaderBoardVC.swift */,
+				A498E7C71FEA1EA50028B356 /* MultiplicationRoundVC.swift */,
+				A498E7C31FEA1E080028B356 /* SummaryVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A498E7BF1FEA19140028B356 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A498E7C01FEA19200028B356 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A498E7C91FEA25C30028B356 /* LeaderBoardCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A4A02E2C1FEA157D008F695F = {
+			isa = PBXGroup;
+			children = (
+				A4A02E371FEA157D008F695F /* Global Multiplication */,
+				A4A02E361FEA157D008F695F /* Products */,
+				D6A0CE03FD8CA1B8DD3F294A /* Pods */,
+				8A7C35A3701B66EAF5357A42 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A4A02E361FEA157D008F695F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4A02E351FEA157D008F695F /* Global Multiplication.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4A02E371FEA157D008F695F /* Global Multiplication */ = {
+			isa = PBXGroup;
+			children = (
+				A4A02E381FEA157D008F695F /* AppDelegate.swift */,
+				A498E7BF1FEA19140028B356 /* Model */,
+				A498E7C01FEA19200028B356 /* View */,
+				A498E7BE1FEA190B0028B356 /* Controller */,
+				A4A02E3C1FEA157D008F695F /* Main.storyboard */,
+				A4A02E4A1FEA15B3008F695F /* Supporting Files */,
+			);
+			path = "Global Multiplication";
+			sourceTree = "<group>";
+		};
+		A4A02E4A1FEA15B3008F695F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4A02E3F1FEA157D008F695F /* Assets.xcassets */,
+				A4A02E411FEA157D008F695F /* LaunchScreen.storyboard */,
+				A4A02E441FEA157D008F695F /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D6A0CE03FD8CA1B8DD3F294A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				26A2E049CE87790284715469 /* Pods-Global Multiplication.debug.xcconfig */,
+				E431FB2CCED213FAF8D673DD /* Pods-Global Multiplication.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4A02E341FEA157D008F695F /* Global Multiplication */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4A02E471FEA157D008F695F /* Build configuration list for PBXNativeTarget "Global Multiplication" */;
+			buildPhases = (
+				3DF8761AA82E5CC6423BB7B1 /* [CP] Check Pods Manifest.lock */,
+				A4A02E311FEA157D008F695F /* Sources */,
+				A4A02E321FEA157D008F695F /* Frameworks */,
+				A4A02E331FEA157D008F695F /* Resources */,
+				D81D412538B824FC19BF47A6 /* [CP] Embed Pods Frameworks */,
+				06F2BA20D4A9B45BAC661B64 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Global Multiplication";
+			productName = "Global Multiplication";
+			productReference = A4A02E351FEA157D008F695F /* Global Multiplication.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4A02E2D1FEA157D008F695F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "trvl, LLC";
+				TargetAttributes = {
+					A4A02E341FEA157D008F695F = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A4A02E301FEA157D008F695F /* Build configuration list for PBXProject "Global Multiplication" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A4A02E2C1FEA157D008F695F;
+			productRefGroup = A4A02E361FEA157D008F695F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4A02E341FEA157D008F695F /* Global Multiplication */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4A02E331FEA157D008F695F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4A02E431FEA157D008F695F /* LaunchScreen.storyboard in Resources */,
+				A4A02E401FEA157D008F695F /* Assets.xcassets in Resources */,
+				A4A02E3E1FEA157D008F695F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		06F2BA20D4A9B45BAC661B64 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Global Multiplication/Pods-Global Multiplication-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3DF8761AA82E5CC6423BB7B1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Global Multiplication-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D81D412538B824FC19BF47A6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Global Multiplication/Pods-Global Multiplication-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RevealingSplashView/RevealingSplashView.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RevealingSplashView.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Global Multiplication/Pods-Global Multiplication-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4A02E311FEA157D008F695F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A498E7CA1FEA25C30028B356 /* LeaderBoardCell.swift in Sources */,
+				A4A02E391FEA157D008F695F /* AppDelegate.swift in Sources */,
+				A498E7C81FEA1EA50028B356 /* MultiplicationRoundVC.swift in Sources */,
+				A498E7C41FEA1E080028B356 /* SummaryVC.swift in Sources */,
+				A498E7C61FEA1E430028B356 /* LeaderBoardVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A4A02E3C1FEA157D008F695F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4A02E3D1FEA157D008F695F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A4A02E411FEA157D008F695F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4A02E421FEA157D008F695F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4A02E451FEA157D008F695F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A4A02E461FEA157D008F695F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4A02E481FEA157D008F695F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 26A2E049CE87790284715469 /* Pods-Global Multiplication.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				INFOPLIST_FILE = "$(SRCROOT)/Global Multiplication/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsanchezrides.Global-Multiplication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A4A02E491FEA157D008F695F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E431FB2CCED213FAF8D673DD /* Pods-Global Multiplication.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 6D9CKTK39V;
+				INFOPLIST_FILE = "$(SRCROOT)/Global Multiplication/Supporting Files/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jsanchezrides.Global-Multiplication";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4A02E301FEA157D008F695F /* Build configuration list for PBXProject "Global Multiplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A02E451FEA157D008F695F /* Debug */,
+				A4A02E461FEA157D008F695F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4A02E471FEA157D008F695F /* Build configuration list for PBXNativeTarget "Global Multiplication" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4A02E481FEA157D008F695F /* Debug */,
+				A4A02E491FEA157D008F695F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4A02E2D1FEA157D008F695F /* Project object */;
+}
