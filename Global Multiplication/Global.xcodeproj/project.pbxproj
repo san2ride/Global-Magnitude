@@ -16,6 +16,7 @@
 		A4A02E3E1FEA157D008F695F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A02E3C1FEA157D008F695F /* Main.storyboard */; };
 		A4A02E401FEA157D008F695F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4A02E3F1FEA157D008F695F /* Assets.xcassets */; };
 		A4A02E431FEA157D008F695F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4A02E411FEA157D008F695F /* LaunchScreen.storyboard */; };
+		A4F27F551FEB3AFF006210C0 /* digital-7 copy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A4F27F541FEB3AFF006210C0 /* digital-7 copy.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		A4A02E3F1FEA157D008F695F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A4A02E421FEA157D008F695F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A4A02E441FEA157D008F695F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4F27F541FEB3AFF006210C0 /* digital-7 copy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "digital-7 copy.ttf"; sourceTree = "<group>"; };
 		E431FB2CCED213FAF8D673DD /* Pods-Global Multiplication.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Global Multiplication.release.xcconfig"; path = "Pods/Target Support Files/Pods-Global Multiplication/Pods-Global Multiplication.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 		A4A02E4A1FEA15B3008F695F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A4F27F541FEB3AFF006210C0 /* digital-7 copy.ttf */,
 				A4A02E3F1FEA157D008F695F /* Assets.xcassets */,
 				A4A02E411FEA157D008F695F /* LaunchScreen.storyboard */,
 				A4A02E441FEA157D008F695F /* Info.plist */,
@@ -194,6 +197,7 @@
 				A4A02E431FEA157D008F695F /* LaunchScreen.storyboard in Resources */,
 				A4A02E401FEA157D008F695F /* Assets.xcassets in Resources */,
 				A4A02E3E1FEA157D008F695F /* Main.storyboard in Resources */,
+				A4F27F551FEB3AFF006210C0 /* digital-7 copy.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

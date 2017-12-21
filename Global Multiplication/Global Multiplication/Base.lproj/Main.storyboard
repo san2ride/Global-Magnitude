@@ -14,12 +14,15 @@
             <string>AvenirNext-Bold</string>
             <string>AvenirNext-Medium</string>
         </array>
+        <array key="digital-7 copy.ttf">
+            <string>Digital-7</string>
+        </array>
     </customFonts>
     <scenes>
         <!--Leader BoardVC-->
         <scene sceneID="OSV-bC-IGe">
             <objects>
-                <viewController id="xtR-WI-C68" customClass="LeaderBoardVC" customModule="Global_Multiplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="xtR-WI-C68" customClass="LeaderBoardVC" customModule="Global" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vKX-rf-H53">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -80,7 +83,7 @@
         <!--Multiplication RoundVC-->
         <scene sceneID="Crw-b8-rRg">
             <objects>
-                <viewController id="msQ-m5-5eb" customClass="MultiplicationRoundVC" customModule="Global_Multiplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="msQ-m5-5eb" customClass="MultiplicationRoundVC" customModule="Global" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="O9p-3B-f0c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -96,16 +99,47 @@
                                     <segue destination="cOm-q3-y13" kind="show" identifier="FinishedSegue" id="AEn-vB-W9v"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-wT-VNc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTL-qn-hYS">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="iZu-GD-2cv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="38"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tfD-Q7-mLT">
+                                        <rect key="frame" x="0.0" y="60" width="375" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="eAu-Gb-4q4"/>
+                                        </constraints>
+                                        <segments>
+                                            <segment title="START"/>
+                                            <segment title="STOP"/>
+                                        </segments>
+                                    </segmentedControl>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4bu-kt-npI" firstAttribute="trailing" secondItem="nln-P5-GdY" secondAttribute="trailing" id="2bM-do-28q"/>
+                            <constraint firstItem="8nn-wT-VNc" firstAttribute="top" secondItem="O9p-3B-f0c" secondAttribute="top" id="DLU-Bf-Wfm"/>
+                            <constraint firstItem="8nn-wT-VNc" firstAttribute="leading" secondItem="4bu-kt-npI" secondAttribute="leading" id="N59-6p-eZf"/>
                             <constraint firstItem="4bu-kt-npI" firstAttribute="leading" secondItem="nln-P5-GdY" secondAttribute="leading" id="b43-rI-nfG"/>
+                            <constraint firstItem="8nn-wT-VNc" firstAttribute="trailing" secondItem="4bu-kt-npI" secondAttribute="trailing" id="hSY-4I-8xC"/>
                             <constraint firstItem="4bu-kt-npI" firstAttribute="bottom" secondItem="nln-P5-GdY" secondAttribute="bottom" id="sPo-aY-4LS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nln-P5-GdY"/>
                     </view>
+                    <connections>
+                        <outlet property="startStopSegment" destination="tfD-Q7-mLT" id="ciL-vu-rBT"/>
+                        <outlet property="timerLabel" destination="DTL-qn-hYS" id="7fA-X9-ecE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XG3-R8-poP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -114,7 +148,7 @@
         <!--SummaryVC-->
         <scene sceneID="WAn-Q3-ucj">
             <objects>
-                <viewController id="cOm-q3-y13" customClass="SummaryVC" customModule="Global_Multiplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cOm-q3-y13" customClass="SummaryVC" customModule="Global" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eRc-Fj-Ggk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -214,6 +248,7 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
+        <segue reference="AEn-vB-W9v"/>
         <segue reference="0UR-zt-hSo"/>
     </inferredMetricsTieBreakers>
 </document>
