@@ -12,6 +12,7 @@
     <customFonts key="customFonts">
         <array key="AvenirNext.ttc">
             <string>AvenirNext-Bold</string>
+            <string>AvenirNext-DemiBold</string>
             <string>AvenirNext-Medium</string>
         </array>
         <array key="digital-7 copy.ttf">
@@ -28,7 +29,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="35F-jM-k0k">
-                                <rect key="frame" x="0.0" y="20" width="375" height="557"/>
+                                <rect key="frame" x="0.0" y="116" width="375" height="461"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
@@ -58,7 +59,7 @@
                                     <color key="titleColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="msQ-m5-5eb" kind="show" identifier="StartRoundSegue" id="ORn-zf-M98"/>
+                                    <segue destination="msQ-m5-5eb" kind="show" id="Crn-J2-1nJ"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -96,31 +97,46 @@
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="36"/>
                                 <state key="normal" title="FINISHED"/>
                                 <connections>
-                                    <segue destination="cOm-q3-y13" kind="show" identifier="FinishedSegue" id="AEn-vB-W9v"/>
+                                    <action selector="finishedTimer:" destination="msQ-m5-5eb" eventType="touchUpInside" id="3UM-m7-8pZ"/>
                                 </connections>
                             </button>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-wT-VNc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="8nn-wT-VNc">
+                                <rect key="frame" x="0.0" y="116" width="375" height="100"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTL-qn-hYS">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="60" id="iZu-GD-2cv"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="38"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="tfD-Q7-mLT">
-                                        <rect key="frame" x="0.0" y="60" width="375" height="41"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="40" id="eAu-Gb-4q4"/>
-                                        </constraints>
-                                        <segments>
-                                            <segment title="START"/>
-                                            <segment title="STOP"/>
-                                        </segments>
-                                    </segmentedControl>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="NqO-JV-f7J">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="49.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTL-qn-hYS">
+                                                <rect key="frame" x="0.0" y="0.0" width="118.5" height="49.5"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="38"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="18" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kfY-ll-QXA">
+                                                <rect key="frame" x="128.5" y="0.0" width="118" height="49.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="38"/>
+                                                <color key="textColor" red="0.33165690175553986" green="1" blue="0.38019562425275233" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3bK-gO-3lu">
+                                                <rect key="frame" x="256.5" y="0.0" width="118.5" height="49.5"/>
+                                                <fontDescription key="fontDescription" name="Digital-7" family="Digital-7" pointSize="38"/>
+                                                <color key="textColor" red="1" green="0.12291705610000001" blue="0.1773723613" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fhn-M0-2Lp">
+                                        <rect key="frame" x="0.0" y="49.5" width="375" height="50.5"/>
+                                        <color key="backgroundColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="17"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="startTimer:" destination="msQ-m5-5eb" eventType="touchUpInside" id="vBe-YM-Qr6"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -128,17 +144,21 @@
                         <color key="tintColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="4bu-kt-npI" firstAttribute="trailing" secondItem="nln-P5-GdY" secondAttribute="trailing" id="2bM-do-28q"/>
-                            <constraint firstItem="8nn-wT-VNc" firstAttribute="top" secondItem="O9p-3B-f0c" secondAttribute="top" id="DLU-Bf-Wfm"/>
-                            <constraint firstItem="8nn-wT-VNc" firstAttribute="leading" secondItem="4bu-kt-npI" secondAttribute="leading" id="N59-6p-eZf"/>
+                            <constraint firstItem="8nn-wT-VNc" firstAttribute="trailing" secondItem="4bu-kt-npI" secondAttribute="trailing" id="34X-p1-jp3"/>
+                            <constraint firstAttribute="bottom" secondItem="8nn-wT-VNc" secondAttribute="bottom" constant="451" id="5oz-f2-IZl"/>
+                            <constraint firstItem="8nn-wT-VNc" firstAttribute="leading" secondItem="4bu-kt-npI" secondAttribute="leading" id="Kxs-b3-uFt"/>
                             <constraint firstItem="4bu-kt-npI" firstAttribute="leading" secondItem="nln-P5-GdY" secondAttribute="leading" id="b43-rI-nfG"/>
-                            <constraint firstItem="8nn-wT-VNc" firstAttribute="trailing" secondItem="4bu-kt-npI" secondAttribute="trailing" id="hSY-4I-8xC"/>
+                            <constraint firstItem="8nn-wT-VNc" firstAttribute="top" secondItem="nln-P5-GdY" secondAttribute="top" id="d5N-at-ytI"/>
                             <constraint firstItem="4bu-kt-npI" firstAttribute="bottom" secondItem="nln-P5-GdY" secondAttribute="bottom" id="sPo-aY-4LS"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nln-P5-GdY"/>
                     </view>
                     <connections>
-                        <outlet property="startStopSegment" destination="tfD-Q7-mLT" id="ciL-vu-rBT"/>
-                        <outlet property="timerLabel" destination="DTL-qn-hYS" id="7fA-X9-ecE"/>
+                        <outlet property="correctScore" destination="kfY-ll-QXA" id="Ud2-1h-g2W"/>
+                        <outlet property="finishedPressed" destination="4bu-kt-npI" id="xcc-MT-hfs"/>
+                        <outlet property="startPressed" destination="Fhn-M0-2Lp" id="dwh-CU-Hbb"/>
+                        <outlet property="timerLabel" destination="DTL-qn-hYS" id="brm-eU-V7U"/>
+                        <outlet property="wrongScore" destination="3bK-gO-3lu" id="scM-vm-InJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XG3-R8-poP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -162,9 +182,6 @@
                                 <state key="normal" title="LEADER BOARD">
                                     <color key="titleColor" red="0.18039215689999999" green="0.76862745099999996" blue="0.71372549019999998" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
-                                <connections>
-                                    <segue destination="xtR-WI-C68" kind="show" identifier="LeaderBoardSegue" id="0UR-zt-hSo"/>
-                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="XMK-QR-pHB">
                                 <rect key="frame" x="16" y="40" width="343" height="160"/>
@@ -247,8 +264,4 @@
             <point key="canvasLocation" x="-658" y="84"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="AEn-vB-W9v"/>
-        <segue reference="0UR-zt-hSo"/>
-    </inferredMetricsTieBreakers>
 </document>
