@@ -18,14 +18,13 @@ class LeaderBoardCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        
     }
 
-    internal func configureCell(gamer: Gamer) {
-        useridLabel.text = gamer.userid
-        scoreLabel.text  = String(describing: gamer.score)
-        mTimeLabel.text  = String(describing: gamer.mtime)
-        qTimeLabel.text  = String(describing: gamer.qtime)
-        
+    internal func configureCell(leader: Leader) {
+        useridLabel.text = leader.userid
+        scoreLabel.text  = String(describing: leader.score)
+        mTimeLabel.text  = String(describing: leader.mtime)
+        qTimeLabel.text  = String(describing: leader.qtime)
     }
 }
